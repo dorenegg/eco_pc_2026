@@ -32,6 +32,7 @@ packages <-
     'ecospat')
 
 ipak(packages)
+packages[!packages %in% installed.packages()[, "Package"]]
 
 #other packages
 
