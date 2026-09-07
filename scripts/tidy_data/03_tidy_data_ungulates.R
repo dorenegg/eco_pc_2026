@@ -43,7 +43,8 @@ angola_ungulates_spp_fix
 # 3- Separe la columna taxonomia en tres columnas llamadas 'class', 'order', 'family utilizando la funcion separate. Como argumento separador use sep = '-' de manera que R entienda que cada guion separa un nombre correspondiente a cada columna.
 
 angola_ungulates_taxonomy_fix <-
-  angola_ungulates_spp_fix %>%  separate(
+  angola_ungulates_spp_fix %>%
+  separate(
     taxonomy,
     into = c('class', 'order', 'family'),
     sep = '-') %>%
